@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>PinYinConvert</id>
+    <version>1.0.2</version>
+    <title>PinYinConvert</title>
+    <authors>JxzCode</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">License.md</license>
+    <!-- <icon>icon.png</icon> -->
+    <description>Chinese to Pinyin Pascal Naming</description>
+    <copyright>Copyright 2023</copyright>
+    <tags>Tag1 Tag2</tags>
+  </metadata>
+</package>

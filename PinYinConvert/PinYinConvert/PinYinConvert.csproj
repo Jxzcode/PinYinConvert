@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net45;netstandard2.0</TargetFrameworks>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>License.md</PackageLicenseFile>
+		<Authors>JxzCode</Authors>
+		<Description>Chinese to Pinyin Pascal Naming</Description>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Version>1.0.2</Version>
+		<PackageOutputPath>$(MSBuildThisFileDirectory)package</PackageOutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net45|AnyCPU'">
+		<Optimize>True</Optimize>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+		<Optimize>True</Optimize>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="PinYinConverterCore" Version="1.0.2" />
+		<None Include="docs\README.md" Pack="true" PackagePath="\" />
+		<None Include="docs\License.md" Pack="true" Visible="false" PackagePath="" />
+		<!--指定自己的在安装 nuget 时修改编译-->
+		<None Include="package\**" Pack="True" PackagePath="build\" />
+	</ItemGroup>
+</Project>
