@@ -9,6 +9,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Version>1.0.2</Version>
 		<PackageOutputPath>$(MSBuildThisFileDirectory)package</PackageOutputPath>
+		<RepositoryUrl>https://github.com/Jxzcode/PinYinConvert</RepositoryUrl>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net45|AnyCPU'">
